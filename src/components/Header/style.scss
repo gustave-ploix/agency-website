@@ -5,15 +5,21 @@ section {
 
     ul {
         position: absolute;
-        left: 0px;
+        left: -160px;
         top: 150px;
         margin-left: 40px;
+        transition: left 0.3s ease-in-out;
 
         li {
             font-family: 'General Sans', sans-serif;
             letter-spacing: 3px;
             font-size: 1.5em;
             font-weight: 400;
+        }
+
+        &.open {
+            position: absolute;
+            left: 0px;
         }
     }
 

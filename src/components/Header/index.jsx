@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 import './style.scss';
 
-function Header() {
+function Header({menuState}) {
+
+    const menuToggle = useRef();
+
+
 
     
     return ( 
         <section>
-            <ul>
+            <ul className={menuState ? "open" : "close"} ref={menuToggle}>
                 <li>Intro</li>
                 <li>About</li>
                 <li>Featured</li>
