@@ -1,12 +1,21 @@
+
 import './style.scss'
 
-function Navbar() {
+function Navbar({ toggle, state }) {
+
+    const handleClick = () => {
+        toggle(!state)
+        console.log(state);
+    }
+
     return (
 
         <nav>
-            <div>Menu</div>
-            <div>Flirty Flowers</div>
-            <div>Cart</div>
+            <div className="btn"
+            onClick={handleClick}>
+                <div className={state ? "open" : "close"}></div>
+                <div className={state ? "open" : "close"}></div>
+            </div>
         </nav>
 
     );
