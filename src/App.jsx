@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Featured from './components/Featured';
 
 import './style.scss'
 
@@ -15,6 +16,7 @@ export default function App() {
         <>
             <Navbar toggle={setdeployMenu} state={deployMenu}  />
             <Header menuState={deployMenu} />
+            <Featured />
         </>
     )
 }
