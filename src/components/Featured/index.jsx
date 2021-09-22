@@ -1,4 +1,4 @@
-import photos from '../../services/data';
+import photos from '../../services/photosFeatured';
 
 import './style.scss'
 
