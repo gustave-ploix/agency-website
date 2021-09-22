@@ -1,4 +1,4 @@
-section {
+#headerSection {
 
     display: flex;
 
@@ -8,19 +8,22 @@ section {
         left: -160px;
         top: 150px;
         margin-left: 40px;
-        transition: left 0.3s ease-in-out;
-
+        
         li {
+            position: absolute;
+            left: -160px;
             font-family: 'General Sans', sans-serif;
             letter-spacing: 3px;
             font-size: 1.5em;
             font-weight: 400;
+            transition: left 0.3s ease-in-out;
+
+            &.open {
+                position: relative;
+                left: 160px;
+            }
         }
 
-        &.open {
-            position: absolute;
-            left: 0px;
-        }
     }
 
     div {

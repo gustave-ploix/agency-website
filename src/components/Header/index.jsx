@@ -10,11 +10,12 @@ function Header({menuState}) {
 
     
     return ( 
-        <section>
-            <ul className={menuState ? "open" : "close"} ref={menuToggle}>
-                <li>Intro</li>
-                <li>About</li>
-                <li>Featured</li>
+        
+        <section id="headerSection">
+            <ul ref={menuToggle}>
+                <li className={menuState ? "open" : "close"}>Intro</li>
+                <li className={menuState ? "open" : "close"}>About</li>
+                <li className={menuState ? "open" : "close"}>Featured</li>
             </ul>
 
             {/* <h1>Art <span>Objects</span> </h1> */}
