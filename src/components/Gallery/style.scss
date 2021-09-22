@@ -1,0 +1,42 @@
+#gallery {
+
+    background-color: #d53f41;
+
+    height: 100vh;
+    width: 7500px;
+
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+
+    #image {   
+        // margin-left:400px;
+
+        position: relative;
+        img {
+            aspect-ratio: 16/9;
+            width: 1000px;
+        }
+        h1 {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 80px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: -100px;
+            transform: translateY(-50%);
+        }
+        h2 {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 75px;
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+
+            position: absolute;
+            top: 60%;
+            left: -100px;
+            transform: translateY(-40%);
+        }
+    }
+}
